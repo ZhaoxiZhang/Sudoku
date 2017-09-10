@@ -11,7 +11,8 @@ public:
 	Sudoku();
 	~Sudoku();
 	bool generateBoard(int row, int col);
-	void displayBoard(ofstream &fout);
+	//void displayBoard(ofstream &fout);
+	void displayBoard();
 };
 
 #endif

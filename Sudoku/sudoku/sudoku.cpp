@@ -88,7 +88,7 @@ bool Sudoku::generateBoard(int row, int col) {
 }
 
 
-void Sudoku::displayBoard(ofstream& fout) {
+/*void Sudoku::displayBoard(ofstream& fout) {
 	for (int i = 0; i < 9; i++) {
 		for (int j = 0; j < 9; j++) {
 			j ? fout << " " << board[i][j] : fout << board[i][j];
@@ -99,5 +99,18 @@ void Sudoku::displayBoard(ofstream& fout) {
 	}
 	//printf("\n");
 	fout << endl;
+}*/
+
+void Sudoku::displayBoard() {
+	for (int i = 0; i < 9; i++) {
+		for (int j = 0; j < 9; j++) {
+			//j ? fout << " " << board[i][j] : fout << board[i][j];
+			j ? fprintf(stdout,"%2d", board[i][j]) : fprintf(stdout,"%d", board[i][j]);
+		}
+		fprintf(stdout,"\n");
+		//fout << endl;
+	}
+	fprintf(stdout,"\n");
+	//fout << endl;
 }
 

@@ -18,16 +18,19 @@ int main(int argc,char* argv[]) {
 			printf("你输入的数独盘数目不合法\n用法：sudoku.exe -c <number>(需要生成的数独盘数目)\n");
 		}
 		else {
-			ofstream fout;
-			fout.open("./sudoku.txt");
+			FILE *stream;
+			freopen_s(&stream, "sudoku.txt", "w", stdout);
+			//ofstream fout;
+			//fout.open("./sudoku.txt");
 			int n = process.convertToNum(argv[2]);
 			srand((unsigned int)time(NULL));
 			while (n--) {
 				Sudoku sudoku;
 				sudoku.generateBoard(0, 1);
-				sudoku.displayBoard(fout);
+				//sudoku.displayBoard(fout);
+				sudoku.displayBoard();
 			}
-			fout.close();
+			//fout.close();
 		}
 	}
 	//system("pause");
