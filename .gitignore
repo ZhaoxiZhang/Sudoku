@@ -1,0 +1,12 @@
+*.log
+*.pdb
+*.suo
+*.db
+*.ipch
+*.obj
+*.idb
+*.tlog
+.lastbuildstate
+*.iobj
+*.ipdb
+*.pdb
