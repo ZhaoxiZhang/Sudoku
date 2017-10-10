@@ -2,6 +2,8 @@
 *.pdb
 *.suo
 *.db
+*.db-shm
+*.db-wal
 *.ipch
 *.obj
 *.idb
@@ -10,3 +12,5 @@
 *.iobj
 *.ipdb
 *.pdb
+*.psess
+*.vsp
